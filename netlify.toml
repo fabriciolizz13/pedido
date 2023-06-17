@@ -1,0 +1,4 @@
+[[redirects]]
+from = "/*"
+to = "/pedio.html"
+status = 200
