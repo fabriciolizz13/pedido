@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pedido.css">
+    <link rel="stylesheet" href="script.js">
+    <title>Agora eu quero ver</title>
+</head>
+<body>
+    <div class="painel">
+        <h1>Depois dessa como recusar?</h1>
+        <img src="img/urso1.jpg" alt="urso">
+    <h2>Aceita sair comigo Amanhã?</h2>
+    <button id="sim" onclick="parabens()">Sim!</button>
+    <button onmouseover="fuja()" id="nao">Não!</button>
+</div>
+<script>
+  function fuja(){
+    var botaoNao = document.getElementById("nao")
+    var larguraJanela = window.innerWidth;
+    var alturaJanela = window.innerHeight;
+
+    var maxX = larguraJanela - botaoNao.offsetWidth;
+    var maxY = alturaJanela - botaoNao.offsetHeight;
+
+    var aleatorioX = Math.floor(Math.random() * maxX);
+    var aleatorioY = Math.floor(Math.random() * maxY);
+
+    botaoNao.style.left = aleatorioX + "px";
+    botaoNao.style.top = aleatorioY + "px";
+
+}
+function parabens (){
+    alert("Aproveita e deixa eu conhecer minha sogra :)")
+} 
+
+</script>
+</body>
+</html>

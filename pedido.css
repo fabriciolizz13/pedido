@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;700&family=Finger+Paint&family=Great+Vibes&family=Instrument+Serif&family=Montserrat:wght@300;400;700;800&family=Nova+Slim&family=PT+Sans:ital@1&family=Pompiere&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=Roboto+Condensed:ital,wght@0,300;1,300&family=Sirin+Stencil&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(249, 217, 249);
+
+}
+
+.painel{
+    background-color: azure;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'PT Sans', sans-serif;
+}
+#sim{
+
+height: 30px;
+width: 40px;
+background-color: darksalmon;
+border: 2px solid white;
+border-radius: 10px;
+color: aliceblue;
+margin-left: -50px;
+}
+#nao{
+    position: absolute;
+    height: 30px;
+    width: 40px;
+    background-color: darksalmon;
+    border:2px solid white;
+    border-radius: 10px;
+    color: aliceblue;
+    margin-left: 10px;
+}
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 767px) {
+    .painel {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* Estilos para desktop */
+  @media only screen and (min-width: 768px) {
+    .painel {
+      width: 500px;
+      height: 500px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
